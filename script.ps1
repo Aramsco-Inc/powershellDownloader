@@ -3,19 +3,19 @@
 # e.g a magento export will show an image URL of /3/m/3m09551_aa24.jpg
 #update the $prefix below to change the download destination
 
-##The root folder for this project should be named powerImages and placed on your desktop.
+##The root folder for this project should be named powershellDownloader and placed on your desktop.
 
 # Set the path to the CSV file
-$csvPath = "$env:USERPROFILE\Desktop\powerImages\image.csv"
+$csvPath = "$env:USERPROFILE\Desktop\powershellDownloader\image.csv"
 
 # Set the prefix to add to the partial URLs
 $prefix = "https://aramsco.com/media/catalog/product"
 
 # Set the path to the images folder
-$imageFolderPath = "$env:USERPROFILE\Desktop\powerImages\images"
+$imageFolderPath = "$env:USERPROFILE\Desktop\powershellDownloader\images"
 
 # Set the path to the log file
-$logFilePath = "$env:USERPROFILE\Desktop\powerImages\error.log"
+$logFilePath = "$env:USERPROFILE\Desktop\powershellDownloader\error.log"
 
 $csvContent = Get-Content $csvPath
 $csvContent | Set-Content $csvPath
